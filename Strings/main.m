@@ -16,7 +16,16 @@ int main(int argc, const char * argv[]) {
         NSLog(@"%@", name);
         NSLog(@"\nlength is %lu", len);
         
+        NSString* nameUppercase = [name uppercaseString];
+        NSString* nameLowercase = [name lowercaseString];
+        NSString* nameLonger    = [name stringByAppendingString: @"harrison"];
+        NSString* nameReplaced  = [name stringByReplacingOccurrencesOfString:@"son" withString:@"daughter"];
         
+        NSLog(@"uppercased: %@\n", nameUppercase);
+        NSLog(@"lowerased: %@\n", nameLowercase);
+        NSLog(@"appended: %@\n", nameLonger);
+        NSLog(@"replaced: %@\n", nameReplaced);
+
     }
     return 0;
 }
