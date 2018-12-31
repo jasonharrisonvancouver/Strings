@@ -11,7 +11,12 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         NSString* name = @"Jason";
+        NSUInteger len = [name length];
+        
         NSLog(@"%@", name);
+        NSLog(@"\nlength is %lu", len);
+        
+        
     }
     return 0;
 }
